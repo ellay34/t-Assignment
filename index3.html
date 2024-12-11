@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>College Admission Form 
+            <marquee>College form for ICS Students</marquee>
+        </h2>
+        <!-- Form -->
+        <form action="/action-page.php">
+            <!-- Full Name -->
+            <label for="name">Full name:</label>
+                <input type="text" id="fname" name="fname"  placeholder="Enter Full Name" required> 
+                <br>
+                <br>
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"  placeholder="Enter Your Email" required> 
+                <br>
+                <br>
+                <!-- Phone no. -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"   required> 
+                <br>
+                <br>
+                <!-- DOB -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+                <br>
+                <!-- Gender -->
+               <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+        <option value="Select Gender">Select Gender </option> 
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            </select>
+            <br>
+            <br>
+            <!-- address -->
+            <label for="Address">Address:</label>
+        <textarea type="text" id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+        <br>
+        <br>
+        <!-- subjects -->
+        <label for="Subject Selection">Subject Selection:
+            <label>
+                <select id="Subject" name="Subject" required>
+                   <option value="Choose a subject">Choose a subject</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Statics">Statics</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Computer science">Computer Science</option>
+                </select>
+                <br>
+                 <br>
+               <!-- button -->
+                <div class="Button-container">
+                   <button type="submit" id="id1">Submit</button>
+                   <button type="reset" id="id2">Reset</button>
+                </div>
+            </form>
+            </div>
+</body>
+</html>
